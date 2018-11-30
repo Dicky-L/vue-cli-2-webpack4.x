@@ -3,9 +3,7 @@ import router from '@/router'
 import qs from 'qs'
 import CookieUtil from '@/utils/CookieUtil'
 import CryptoJS from 'crypto-js'
-import { MessageBox } from 'mint-ui'
 import env from '@/config/env.js'
-import { Indicator } from 'mint-ui'
 import * as BrowserUtils from '@/utils/BrowserUtils'
 
 const API_PATH = env.API_PATH
@@ -89,7 +87,6 @@ axios.interceptors.response.use(
           break
       }
       console.log('currentFetch.url:::', currentFetch.url, ';errorMsg::', errorMsg)
-      MessageBox('错误代码' + code + '：', errorMsg)
     }
     return response
   },

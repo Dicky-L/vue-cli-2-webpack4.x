@@ -32,13 +32,6 @@ const createLintingRule = () => ({
 //     .argv;
 
 module.exports = {
-  // externals: {
-  //   vue: 'Vue',
-  //   vuex: 'Vuex',
-  //   'vue-router': 'VueRouter',
-  //   'mint-ui': 'MintUI',
-  //   'Swiper': 'Swiper'
-  // },
   context: path.resolve(__dirname, '../'),
   entry: {
     app: ['babel-polyfill', './src/main.js']

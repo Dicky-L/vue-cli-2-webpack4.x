@@ -39,7 +39,7 @@ exports.cssLoaders = function(options) {
   // generate loader string to be used with extract text plugin
   function generateLoaders(loader, loaderOptions) {
     let loaders = []
-      loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader]
+    loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader]
     if (loader) {
       loaders.push({
         loader: loader + '-loader',
@@ -59,9 +59,7 @@ exports.cssLoaders = function(options) {
     // } else {
     //   return ['vue-style-loader'].concat(loaders)
     // }
-    return [
-      options.extract ? MiniCssExtractPlugin.loader : 'vue-style-loader',
-    ].concat(loaders)
+    return [options.extract ? MiniCssExtractPlugin.loader : 'vue-style-loader'].concat(loaders)
   }
 
   // https://vue-loader.vuejs.org/en/configurations/extract-css.html
