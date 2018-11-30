@@ -39,11 +39,7 @@ exports.cssLoaders = function(options) {
   // generate loader string to be used with extract text plugin
   function generateLoaders(loader, loaderOptions) {
     let loaders = []
-    if (options.isPCHome) {
       loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader]
-    } else {
-      loaders = options.usePostCSS ? [cssLoader, postcssLoader, px2remLoader] : [cssLoader, px2remLoader]
-    }
     if (loader) {
       loaders.push({
         loader: loader + '-loader',
