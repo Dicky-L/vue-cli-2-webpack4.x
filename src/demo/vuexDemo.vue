@@ -10,12 +10,11 @@ import { mapState } from 'vuex'
 export default {
   data () {
     return {
-      // count: this.$store.state.count
     }
   },
   computed: {
     ...mapState({
-      count: state => state.user.count
+      count: state => state.example.count
     }),
     doneTodos () {
       return this.$store.getters['user/doneTodosCount']

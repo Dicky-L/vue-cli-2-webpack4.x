@@ -29,7 +29,7 @@ function getLanguage () {
   return 'en'
 }
 
-// 动态加载后台语言 zpinghuang 20180412
+// 动态加载后台语言
 function loadDynamicLanguage () {
   var obj = {}
   getI18nDic(obj).then(res => {
@@ -44,7 +44,7 @@ const i18n = new VueI18n({
   locale: getLanguage(),
   messages
 })
-
-loadDynamicLanguage() // 动态加载后台语言 zpinghuang 20180412
+// 动态加载后台语言
+loadDynamicLanguage()
 
 export default i18n

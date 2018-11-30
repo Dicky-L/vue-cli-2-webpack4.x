@@ -1,7 +1,6 @@
 <template>
   <div>
     <iframe :src="iframeSrc" frameborder="0"></iframe>
-    子
   </div>
 </template>
 

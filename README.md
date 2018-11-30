@@ -1,6 +1,6 @@
-# vuex
+# vue-cli customize
 
-> vuex demo
+> vue-cli customize
 
 ## Build Setup
 
